@@ -1,0 +1,70 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="h1">Here are the Details of {{employeeList[0].FirstName}}</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+            <p>FirstName:- {{employeeList[0].FirstName}}</p>
+        </div>
+        <div class="col-md-4">
+            <p>MiddleName:- {{employeeList[0].MiddleName}}</p>
+        </div>
+
+        <div class="col-md-3">
+            <p>LastName:- {{employeeList[0].LastName}}</p>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+            <p>EmployeeType:- {{employeeList[0].EmployeeType}}</p>
+        </div>
+        <div class="col-md-4">
+            <p>Gender:- {{employeeList[0].gender}}</p>
+        </div>
+
+        <div class="col-md-3">
+            <p>Address:- {{employeeList[0].Address}}</p>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+            <p>DOB:- {{employeeList[0].DOB}}</p>
+        </div>
+        <div class="col-md-4">
+            <p>Pincode:- {{employeeList[0].pincode}}</p>
+        </div>
+
+        <div class="col-md-3">
+            <p>Email:- {{employeeList[0].emailid}}</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class = "col-md-3">
+            <p>Contact:- {{employeeList[0].Contact}}</p>
+        </div>
+        
+    </div>
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-11">
+            <button mat-raised-button color="primary" routerLink="/list">Return To Employee List</button>
+
+        </div>
+
+    </div>
+
+</div>

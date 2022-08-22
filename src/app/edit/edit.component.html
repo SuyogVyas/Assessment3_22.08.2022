@@ -1,0 +1,102 @@
+<app-navbar></app-navbar>
+<div class="container">
+
+    <div class = "row">
+      <div class = "col-md-1"></div>
+      <div class= "col-md-11"><h1>Edit Employee</h1></div>
+    </div>
+
+      <div class = "row">
+        <div class = "col-md-1"></div>
+        <div class = "col-md-3">
+      <mat-form-field appearance="fill">
+          <mat-label>FirstName</mat-label>
+          <input required matInput value = "{{employeeList[0].FirstName}}">
+        </mat-form-field>
+      </div>
+
+      <div class = "col-md-3">
+        <mat-form-field appearance="fill">
+          <mat-label>MiddleName</mat-label>
+          <input required matInput value = "{{employeeList[0].MiddleName}}">
+        </mat-form-field>
+      </div>
+      
+      <div class = "col-md-3">
+        <mat-form-field appearance="fill">
+          <mat-label>LastName</mat-label>
+          <input  required matInput value = "{{employeeList[0].LastName}}">
+        </mat-form-field>
+      </div>
+      </div>
+    
+
+      <div class = "row">
+        <div class = "col-md-1"></div>
+        <div class = "col-md-3">
+            <mat-form-field appearance="fill">
+                <mat-label>Email</mat-label>
+                <input  required matInput value = "{{employeeList[0].emailid}}">
+              </mat-form-field>
+           
+      </div>
+      
+      <div class = "col-md-3">
+        <mat-form-field appearance="fill">
+          <mat-label>Gender</mat-label>
+          <input  required matInput value = "{{employeeList[0].gender}}">
+        </mat-form-field>
+      </div>
+
+      <div class = "col-md-3">
+        <mat-form-field appearance="fill">
+          <mat-label>Address</mat-label>
+          <input required  matInput value = "{{employeeList[0].Address}}">
+        </mat-form-field>
+      </div>
+      </div>
+
+      <div class = "row">
+        <div class = "col-md-1"></div>
+        <div class = "col-md-3">
+        <mat-form-field appearance="fill">
+          <mat-label>DOB</mat-label>
+          <input required  matInput value = "{{employeeList[0].DOB}}">
+        </mat-form-field>
+      </div>
+      
+      <div class = "col-md-3">
+        <mat-form-field appearance="fill">
+          <mat-label>Pincode</mat-label>
+          <input required  matInput value = "{{employeeList[0].pincode}}">
+        </mat-form-field>
+      </div>
+
+      <div class = "col-md-3">
+        <mat-form-field appearance="fill">
+            <mat-label>EmployeeType</mat-label>
+            <select matNativeControl required>
+              <option value="Contract">{{employeeList[0].EmployeeType}}</option>
+            </select>
+          </mat-form-field>
+      </div>
+      </div>
+
+
+        <div class = "row">
+        <div class = "col-md-1"></div>  
+        <div class = "col-md-3">
+            <mat-form-field appearance="fill">
+                <mat-label>Contact</mat-label>
+                <input required  matInput value = "{{employeeList[0].Contact}}">
+              </mat-form-field>
+        </div>
+      
+    </div>
+    <div class = "row">
+        <div class = "col-md-1"></div>
+        <div class = "col-md-11">
+            <button mat-raised-button color="primary" routerLink = "/list">Return to Employee List</button>
+          </div>  
+    </div>
+    </div>
